@@ -1,26 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-    <title> GEOG 485L/585L -- My First Map </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myCSS_styleFiles/myStyle.css">
+    <title>Max Sisneros - Personal Website</title>
 </head>
 <body>
-    <p>
-        My first map will appear here:
-    </p>
-    <div id ="mapId" style = "height: 400px; width: 600px;"></div>
-    <script>
-        //Bandelier Hall East lat/long: 35.0843° N, -106.6241° W
-        //create a map variable "mymap" that points to the map placed in the mapId <div>
-        //zoom the view on Bandelier Hall East building at a 17 zoom level
-        var mymap = L.map('mapId').setView([35.0843, -106.6241], 17);
-
-        //create a variable names "osm" that is used to hold OpenStreetMap tile layer
-        var osm = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-
-        // add the OpenStreetMap tile layer (i.e the variable osm defined above) to the map
-        osm.addTo(mymap);
-    </script>
+    <header>
+        <div class="nav-container">
+            <div class="brand">Max Sisneros</div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume">Resume</a>
+                <a href="#webapp">Web App</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>Hi, I’m Max. This is my personal website where I share my projects, resume, and a web app demo. Use the navigation tabs above to jump between sections.</p>
+            <p>I'm interested in web design, GIS, data visualization, and building interactive apps that solve real problems.</p>
+            <a class="cta-link" href="#projects">See my work</a>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="section-grid">
+                <article class="card">
+                    <h3>Project 1</h3>
+                    <p>Interactive mapping dashboard for spatial analysis and visualization.</p>
+                </article>
+                <article class="card">
+                    <h3>Project 2</h3>
+                    <p>Responsive website built with modern HTML, CSS, and JavaScript.</p>
+                </article>
+                <article class="card">
+                    <h3>Project 3</h3>
+                    <p>Data-driven report with charts and key insights from real-world data.</p>
+                </article>
+                <article class="card">
+                    <h3>Project 4</h3>
+                    <p>Web app prototype for planning and user interaction on mobile devices.</p>
+                </article>
+            </div>
+        </section>
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>Education, skills, and experience highlights go here. You can update this section with your coursework, internships, software tools, and achievements.</p>
+            <div class="section-grid">
+                <article class="card">
+                    <h3>Education</h3>
+                    <p>Bachelor’s degree in Geography or related field with GIS and web design coursework.</p>
+                </article>
+                <article class="card">
+                    <h3>Skills</h3>
+                    <p>HTML, CSS, JavaScript, GIS tools, data visualization, and responsive design.</p>
+                </article>
+                <article class="card">
+                    <h3>Experience</h3>
+                    <p>Team collaboration, project development, and applied research experience.</p>
+                </article>
+            </div>
+        </section>
+        <section id="webapp">
+            <h2>Web App</h2>
+            <p>This tab is reserved for your interactive web app or prototype. Add your app here when ready, or include a link to a separate demo.</p>
+            <div class="card">
+                <h3>App Preview</h3>
+                <p>Use this section for an embedded app, a screenshot, or a link to your functioning web application.</p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
