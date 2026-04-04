@@ -1,0 +1,138 @@
+
+:root {
+    --bg: #0f172a;
+    --surface: #1e293b;
+    --surface-soft: #334155;
+    --text: #e2e8f0;
+    --accent: #38bdf8;
+    --accent-strong: #22c55e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, sans-serif;
+    background: linear-gradient(180deg, #111827 0%, #0f172a 100%);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: rgba(15, 23, 42, 0.94);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+    z-index: 10;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.brand {
+    font-size: 1.1rem;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+nav {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    border-radius: 999px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background: rgba(56, 189, 248, 0.15);
+    color: var(--accent);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+}
+
+section {
+    background: rgba(30, 41, 59, 0.95);
+    border: 1px solid rgba(148, 163, 184, 0.14);
+    border-radius: 24px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 30px 80px rgba(15, 23, 42, 0.24);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #f8fafc;
+}
+
+section p {
+    line-height: 1.75;
+    color: #cbd5e1;
+}
+
+.section-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.card {
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 18px;
+    padding: 1.25rem;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #e2e8f0;
+}
+
+.card p {
+    margin: 0.75rem 0 0;
+    color: #94a3b8;
+}
+
+.cta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.1rem;
+    background: var(--accent);
+    color: #0f172a;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.cta-link:hover {
+    background: var(--accent-strong);
+    transform: translateY(-1px);
+}
+
+@media (min-width: 768px) {
+    .section-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
