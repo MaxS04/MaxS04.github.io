@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="JS_CSS_downloaded_libraries/bootstrap.min.css">
     <link rel="stylesheet" href="myCSS_styleFiles/myStyle.css">
+    <script src="JS_CSS_downloaded_libraries/bootstrap.min.js"></script>
     <title>Max Sisneros - Personal Website</title>
 </head>
+
 <body>
     <header>
         <div class="nav-container">
@@ -21,35 +25,54 @@
     <main>
         <section id="home">
             <h2>Welcome</h2>
-            <p>Hi, my name is Max Sisneros. This is my personal website where I share my projects, resume, and a web app demo. Use the navigation tabs above to jump between sections.</p>
-            <p>I'm interested in web design, GIS, data visualization, and building interactive apps that solve real problems.</p>
+            <div class="rounded mx-auto d-block" style="width: 350px;">
+                <img src="data/Headshot.jpg" alt="Profile Picture" class="rounded" width="350" height="auto">
+            </div>
+            <p>Hi, my name is Max Sisneros. This is my personal website where you can see my projects, resume, and eventually my web app
+                demo. Use the navigation tabs above to jump between sections.</p>
+            <h3>About Me</h3>
+            <p>Currently, I am an undergraduate student in the computer science program at the University of New Mexico,
+                with a minor in Geographic Information Systems.
+                I am very interested in learning more about how these two fields intersect, and I am excited to share my
+                projects and experiences here.
+            </p>
+            <p>In my free time, I enjoy playing video games, hiking, travelling, and meeting new people!</p>
             <a class="cta-link" href="#projects">See my work</a>
         </section>
         <section id="projects">
             <h2>Projects</h2>
+            <p>Here are some of the projects I have worked on. Click on the project cards to learn more about each one.</p>
             <div class="section-grid">
-                <article class="card">
-                    <h3>Project 1</h3>
-                    <p>Put project description here.</p>
-                </article>
-                <article class="card">
-                    <h3>Project 2</h3>
-                    <p>Put project description here.</p>
-                </article>
-                <article class="card">
-                    <h3>Project 3</h3>
-                    <p>Put project description here.</p>
-                </article>
-                <article class="card">
+                <button class="card" onclick="window.open('https://github.com/Haughskell/project-2-her-part-2-MaxS04', '_blank');">
+                    <h3>Project 1 - HER</h3>
+                    <p>Interactive Hexapawn game with self-learning computer player.</p>
+                    <p></p>
+                    <img src="data/Hexapawn.png" alt="HER Game Screenshot" width="100%" height="auto">
+                </button>
+                <button class="card" onclick="window.open('https://github.com/Haughskell/project-3-part-3-gui-MaxS04', '_blank');">
+                    <h3>Project 2 - Scrabble</h3>
+                    <p>A fully playable scrabble game that pits the player against a computer.</p>
+                    <p></p>
+                    <img src="data/Scrabble.png" alt="Scrabble Game Screenshot" width="75%" height="auto">
+                </button>
+                <button class="card" onclick="window.open('https://github.com/MaxS04/hurricane-helene-data', '_blank');">
+                    <h3>Project 3 - Hurricane Helene Research Project</h3>
+                    <p>Analysis and visualization of data related to Hurricane Helene, 
+                        to be used for a project involving social vulnerability with regards to hydro-climatic hazards.</p>
+                    <p>Currently working with Dr. Marcela Suarez, a professor in the Department of Geography.</p>
+                    <p></p>
+                    <img src="data/Hurricane_Helene.png" alt="Hurricane Helene Data Screenshot" width="100%" height="auto">
+                </button>
+                <!-- <button class="card" onclick="window.open('https://github.com/Haughskell/project-2-her-part-2-MaxS04', '_blank');">
                     <h3>Project 4</h3>
                     <p>Put project description here.</p>
-                </article>
+                </button> -->
             </div>
         </section>
         <section id="resume">
             <h2>Resume</h2>
-            <div class="section-grid">
-                <p>I will include the resume here as an embedded document</p>
+            <div class="rounded mx-auto d-block" style="width: 90%;">
+                <iframe src="data/Website_Resume.pdf" width="100%" height="600px" style="border:none;"></iframe>
             </div>
         </section>
         <section id="webapp">
@@ -62,4 +85,5 @@
         </section>
     </main>
 </body>
+
 </html>
