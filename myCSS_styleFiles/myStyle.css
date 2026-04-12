@@ -81,14 +81,17 @@ section {
     box-shadow: 0 30px 80px rgba(15, 23, 42, 0.24);
 }
 
-section h2 {
+section h2,
+section h3 {
     margin-top: 0;
+    text-align: left;
     color: #f8fafc;
 }
 
 section p {
     line-height: 1.75;
     color: #cbd5e1;
+    text-align: left;
 }
 
 .section-grid {
